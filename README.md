@@ -84,7 +84,7 @@ To distinguish cases into high- vs low-risk patients, three threshold values, na
 
 The associated features contributing to each model are outlined in the table below, where stromal features are denoted in pink, and epithelial features in purple rows. A hazard ratio greater than 1 (beta greater than 0) indicates that the feature is elevated in the high-risk category (red), while a hazard ratio less than 1 (beta less than 0) implies the opposite (blue).
 
-<img width="859" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
+<img width="900" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
 
 
 # Evaluating population-specific versus population-agnostic prognostic models in AA and EA women
