@@ -9,15 +9,15 @@ Endometrial cancer (EC) disproportionately affects African American (AA) women i
 
 The main steps involved in the race-specific prognostic models for EC are as follows:
 
-Preprocessing steps (Extracting tiles from H&E-stained Whole Slide Images, Epithelium/Stroma segmentation, Nuclei segmentation)
-Tissue Phenotyping
-Capturing quantitative immune profiles 
-Model Construction 
-Evaluating population-specific versus population-agnostic prognostic models in AA and EA women
-Molecular subtypes
-Consensus clustering
-Univariate and multivariable models controlling the clinicopathological factors
-Genomic and Bioinformatics Analysis
+* Preprocessing steps (Extracting tiles from H&E-stained Whole Slide Images, Epithelium/Stroma segmentation, Nuclei segmentation)
+* Tissue Phenotyping
+* Capturing quantitative immune profiles 
+* Model Construction 
+* Evaluating population-specific versus population-agnostic prognostic models in AA and EA women
+* Molecular subtypes
+* Consensus clustering
+* Univariate and multivariable models controlling the clinicopathological factors
+* Genomic and Bioinformatics Analysis
 
 To start running the workflow, follow the instructions.
 
