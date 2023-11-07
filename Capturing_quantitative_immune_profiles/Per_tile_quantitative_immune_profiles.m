@@ -1,6 +1,6 @@
 clear, clc, close all
 addpath(genpath(pwd))
-folder = 'C:\Users\sxa786\Desktop\New folder\input2\';
+folder = 'C:\Users\sxa786\Desktop\New folder\input\';
 save_folder = 'C:\Users\sxa786\Desktop\New folder\output\';
 
 
