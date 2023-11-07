@@ -57,7 +57,7 @@ After segmentation, an SVM image-driven model was applied for TIL detection. Nuc
 
 # Capturing quantitative immune profiles 
 
-In this step, we utilize the coordinates of four distinct cell families, namely stromal non-TILs, stromal TILs, epithelial non-TILs, and epithelial TILs, to extract spatial graph features.
+In this step, we utilize the coordinates of four distinct cell families, namely stromal non-TILs (dark blue), stromal TILs (cyan), epithelial non-TILs (orange), and epithelial TILs (green), to extract spatial graph features.
 
 
 *	Cell Cluster Subgraphs: The code constructs subgraphs of neighboring cells based on specific cell coordinates. Each cell subgraph effectively represents interactions among the contributing cells.
@@ -76,3 +76,4 @@ To do this, please execute "Per_tile_quantitative_immune_profiles.m" As a result
 Per-tile features will be employed to calculate per-patient features using six statistics (mean, median, minimum, maximum, range, and variance) on all stromal and epithelial tiles represented for a patient, yielding 4200 features per patient
 
 # Model Construction 
+The least shrinkage and selection operator (LASSO) in conjunction with the Cox proportional hazards regression model, was employed to establish prognostic models for progression-free survival (PFS) in the context of MAA, MEA, and MPA. These models, trained on T0_AA, T0_EA, and T0, yield risk scores comprising a sparse set of features, each assigned a weight (beta). The risk score thus is the linear combination of these feature values.
