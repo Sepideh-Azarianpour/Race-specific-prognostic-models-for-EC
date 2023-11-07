@@ -83,7 +83,7 @@ To distinguish cases into high- vs low-risk patients, three threshold values, na
 
 The associated features contributing to each model are outlined in the table below, where stromal features are denoted in pink, and epithelial features in purple rows. A hazard ratio greater than 1 (beta greater than 0) indicates that the feature is elevated in the high-risk category (red), while a hazard ratio less than 1 (beta less than 0) implies the opposite (blue).
 
-<img width="459" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
+<img width="859" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
 
 
 # Evaluating population-specific versus population-agnostic prognostic models in AA and EA women
@@ -94,8 +94,33 @@ MAA and MEA models were developed using T0AA and T0EA, respectively, while the M
 
 
 # Molecular subtypes
+To observe how genomic subtypes (CNH, CNL, MSI, and POLE) affect progression in endometrial cancer and their respective Kaplan-Meier survival curves, you can execute 'Disparity_KM_forGenomic_subtypes_TCGA' and 'Disparity_KM_forGenomic_subtypes_TCGA'.
+
+These codes will provide you with the Kaplan-Meier survival curves that illustrate the influence of CNH, CNL, MSI, and POLE genomic subtypes on PFS. there should be seen a trend of improving outcomes from CNH to POLE.
+
 # Consensus clustering
+To explore potential associations between endometrial cancer (EC) genomic subtypes and the list of contributing morphological features to MPA using an unsupervised clustering technique, follow these steps:
+
+Run the 'Consensus_Clustering/main.R' script: Please modify the 'cluster_labels' and 'cluster_values' variables in lines 707 and 721 to suit your analysis. These variables define the cluster labels and values for your specific experiment.
+If you are interested in a subset of AA or EA data. load the appropriate subset of data before conducting the analysis.
+After completing the clustering analysis, you will have a clusterogram and unsupervised clustering results.
+
+Next, you can use a Python code to measure the precision and recall of these identified clusters with the pre-existing molecular subtypes. Use the 'Create_Bar_TCGA.py' and 'Create_Bar_UH' scripts for this purpose. Adjust the appropriate variable names in the following lines as needed: 138, 151, 102-104. 
+
+As a result of running these Python scripts, you will generate the following output files:
+*	A cropped version of the consensus clusterogram.
+*	A bar plot displaying the true labels.
+*	An xlsx report file containing the evaluation results, (precision and recall and a few other metrics).
+
+
+
+![Consensus](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/da142719-f338-4d39-82f4-79a604811085)
+
+
 #  Univariate and multivariable models controlling the clinicopathological factors
+The 'Univariate_Multivariable.m' script performs univariate and multivariable Cox regression analyses to assess whether the prognostic value of MAA and MEA risk scores remains significant when considering clinicopathological variables, confounding factors (e.g., age, grade, stage, histotypes, genomic subtypes, and imaging risk scores), requiring a significance level of p < 0.05.
+
+
 #  Genomic and Bioinformatics Analysis
 
  
