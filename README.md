@@ -44,13 +44,14 @@ Execute the U-Net model by running the 'epithelium_stroma_segmentation.py' file 
 ## 	Nuclei Segmentation:
 For nuclei segmentation and classification, we employed the HoverNet model, a state-of-the-art algorithm. The specific model checkpoint used is the PanNuke checkpoint, which contains the necessary model weights and configurations. You can access the HoverNet model and its PanNuke checkpoint on the following GitHub repository: [https://github.com/vqdang/hover_net].
 
-![Nuc_mask](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/8dc788ff-28e0-43fb-af0e-cf489776a96a)
+<img width="359" alt="Nuc_mask" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/8dc788ff-28e0-43fb-af0e-cf489776a96a">
+
 
 
  ## Identifying tumor-infiltrating lymphocyte (TIL):
 After segmentation, an SVM image-driven model was applied for TIL detection. Nuclei features, including shape, color, and texture, were used to classify each segmented nucleus as TIL or non-TIL. The model located at ‘SVM_TIL_Detection_Model\ lymp_svm_matlab_wsi.mat’
 
-![TILdetection](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/79f3aa55-c2a3-4533-886b-6da86591eac6)
+<img width="359" alt="TILdetection" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/79f3aa55-c2a3-4533-886b-6da86591eac6">
 
 
 
