@@ -28,6 +28,7 @@ To start running the workflow, follow the instructions.
 This process involves extracting tiles from the whole slide image, each of size 3000x3000 pixels. To execute this task, please run the 'extract_tiles.py' file. Make sure to specify the 'input_path' to indicate the location where your whole slide images are stored and the 'output_path' where you want the extracted tiles to be saved.
 
 ![S06-1150-B2_24000_84000_0](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062)
+<img width="359" alt="S06-1150-B2_24000_84000_0" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062">
 
 ## HistoQC:
  This is an open-source quality control tool designed to identify unsuitable-quality tiles in digital pathology slides. It helps detect issues such as blurriness, cracked tissue portions, and artifacts from the scanning process [https://github.com/choosehappy/HistoQC].
