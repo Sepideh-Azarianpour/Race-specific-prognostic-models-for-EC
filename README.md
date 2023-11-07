@@ -77,3 +77,14 @@ Per-tile features will be employed to calculate per-patient features using six s
 
 # Model Construction 
 The least shrinkage and selection operator (LASSO) in conjunction with the Cox proportional hazards regression model, was employed to establish prognostic models for progression-free survival (PFS) in the context of MAA, MEA, and MPA. These models, trained on T0_AA, T0_EA, and T0, yield risk scores comprising a sparse set of features, each assigned a weight (beta). The risk score thus is the linear combination of these feature values.
+
+
+To distinguish cases into high- vs low-risk patients, three threshold values, namely thres_AAM, thres_EAM, and thres_PAM (-2.36, -0.64, and -0.39, respectively) were obtained to define these risk categories. 
+
+The associated features contributing to each model are outlined in the table below, where stromal features are denoted in pink, and epithelial features in purple rows. A hazard ratio greater than 1 (beta greater than 0) indicates that the feature is elevated in the high-risk category (red), while a hazard ratio less than 1 (beta less than 0) implies the opposite (blue).
+
+<img width="459" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
+
+
+
+
