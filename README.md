@@ -27,6 +27,10 @@ To start running the workflow, follow the instructions.
 
 <img src="[https://github.com/favicon.ico](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/Readme Figures/Tile.png)" width="48">
 
+Readme Figures/Tile.png
+
+https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/blob/main/Readme%20Figures/Tile.png
+
 ![S06-1150-B2_24000_84000_0](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062)
 
 
