@@ -27,19 +27,18 @@ To start running the workflow, follow the instructions.
 
 This process involves extracting tiles from the whole slide image, each of size 3000x3000 pixels. To execute this task, please run the 'extract_tiles.py' file. Make sure to specify the 'input_path' to indicate the location where your whole slide images are stored and the 'output_path' where you want the extracted tiles to be saved.
 
-![S06-1150-B2_24000_84000_0](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062)
 <img width="359" alt="S06-1150-B2_24000_84000_0" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062">
 
 ## HistoQC:
  This is an open-source quality control tool designed to identify unsuitable-quality tiles in digital pathology slides. It helps detect issues such as blurriness, cracked tissue portions, and artifacts from the scanning process [https://github.com/choosehappy/HistoQC].
-![HistoQC_PAIR](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/5890e997-8ffb-425f-bc76-9e7cf4e20f26)
+<img width="359" alt="HistoQC_PAIR" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/5890e997-8ffb-425f-bc76-9e7cf4e20f26">
 
 
  ## Segmenting Tissue within a Tile into Epithelial and Stromal Compartments:
 Execute the U-Net model by running the 'epithelium_stroma_segmentation.py' file on the previously extracted tiles. Ensure that the model weights file is accessible at 'code/preprocessing/epi_seg_unet.pth' and specify the 'input_path' and the 'output_path' parameter to indicate the location where the extracted tiles are stored and where you want to save the generated epithelium/stroma segmentation masks.
 
+<img width="359" alt="Epi_stroma" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/754947e9-04ad-4d76-86f6-f7e79c8a1288">
 
-![Epi_stroma](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/754947e9-04ad-4d76-86f6-f7e79c8a1288)
 
 
 ## 	Nuclei Segmentation:
