@@ -23,18 +23,26 @@ To start running the workflow, follow the instructions.
  
 
 # Tissue Phenotyping
-*	Extracting tiles from H&E-stained Whole Slide Images:
+*	# Extracting tiles from H&E-stained Whole Slide Images:
 
 This process involves extracting tiles from the whole slide image, each of size 3000x3000 pixels. To execute this task, please run the 'extract_tiles.py' file. Make sure to specify the 'input_path' to indicate the location where your whole slide images are stored and the 'output_path' where you want the extracted tiles to be saved.
 
 ![S06-1150-B2_24000_84000_0](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a8a1fa4a-51f6-4f49-a202-f77ad5bca062)
 
-* HistoQC: This is an open-source quality control tool designed to identify unsuitable-quality tiles in digital pathology slides. It helps detect issues such as blurriness, cracked tissue portions, and artifacts from the scanning process [https://github.com/choosehappy/HistoQC].
+* # HistoQC:
+ This is an open-source quality control tool designed to identify unsuitable-quality tiles in digital pathology slides. It helps detect issues such as blurriness, cracked tissue portions, and artifacts from the scanning process [https://github.com/choosehappy/HistoQC].
 ![HistoQC](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/1fcf4009-44ca-476e-b67e-325b95417c11)
 
 
+* # Segmenting Tissue within a Tile into Epithelial and Stromal Compartments:
+Execute the U-Net model by running the 'epithelium_stroma_segmentation.py' file on the previously extracted tiles. Ensure that the model weights file is accessible at 'code/preprocessing/epi_seg_unet.pth' and specify the 'input_path' and the 'output_path' parameter to indicate the location where the extracted tiles are stored and where you want to save the generated epithelium/stroma segmentation masks.
 
 
+![Epi_stroma](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/754947e9-04ad-4d76-86f6-f7e79c8a1288)
 
-dvghsdv
-![S06-1150-B2_24000_84000_1](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/4da7d5a7-5732-4393-b52f-c408a2c8e678)
+
+* # •	Nuclei Segmentation:
+For nuclei segmentation and classification, we employed the HoverNet model, a state-of-the-art algorithm. The specific model checkpoint used is the PanNuke checkpoint, which contains the necessary model weights and configurations. You can access the HoverNet model and its PanNuke checkpoint on the following GitHub repository: [https://github.com/vqdang/hover_net].
+
+![Nuc_mask](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/8dc788ff-28e0-43fb-af0e-cf489776a96a)
+
