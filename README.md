@@ -23,7 +23,7 @@ To start running the workflow, follow the instructions.
  
 
 # Tissue Phenotyping
-	## Extracting tiles from H&E-stained Whole Slide Images:
+## Extracting tiles from H&E-stained Whole Slide Images:
 
 This process involves extracting tiles from the whole slide image, each of size 3000x3000 pixels. To execute this task, please run the 'extract_tiles.py' file. Make sure to specify the 'input_path' to indicate the location where your whole slide images are stored and the 'output_path' where you want the extracted tiles to be saved.
 
