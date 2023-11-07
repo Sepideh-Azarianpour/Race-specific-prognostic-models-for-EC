@@ -86,5 +86,16 @@ The associated features contributing to each model are outlined in the table bel
 <img width="459" alt="Tab2" src="https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/a052a44c-cf6c-4930-9db6-ef5bbff15ccc">
 
 
+# Evaluating population-specific versus population-agnostic prognostic models in AA and EA women
+MAA and MEA models were developed using T0AA and T0EA, respectively, while the MPA model utilized the entirety of T0 data to predict progression-free survival (PFS). Subsequently, these models—MAA, MEA, and MPA—were assessed on T1, T1AA, T1EA, T2, T2AA, and T2EA datasets, resulting in 18 evaluations. Kaplan-Meier analysis was conducted for each evaluation, stratifying risk groups based on the respective model. The analysis included p-values, hazard ratios (HR), 95% confidence intervals (CI), and c-index values. The MATLAB code 'Disparity_immune_risk_KM' automates these analyses for MAA, MEA, and MPA across different cohorts, including racial subsets, generating Kaplan-Meier curves for high- and low-risk groups and drawing KM graphs with stratification tables.
+![KM_TCGA](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/dbe3832a-f013-41d6-b06e-33478bd97151)
+![KM_UH](https://github.com/Sepideh-Azarianpour/Race-specific-prognostic-models-for-EC/assets/87716968/7d2f986e-68ac-4397-9e8f-220129fb469c)
 
 
+
+# Molecular subtypes
+# Consensus clustering
+#  Univariate and multivariable models controlling the clinicopathological factors
+#  Genomic and Bioinformatics Analysis
+
+ 
